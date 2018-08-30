@@ -26,9 +26,6 @@ class Main extends PluginBase
 
     public function onLoad()
     {
-        ZXDA::init(703, $this);
-        ZXDA::requestCheck();
-
         $this->path = $this->getDataFolder();
         @mkdir($this->path);
         @mkdir($this->getDataFolder() . 'Signs');
